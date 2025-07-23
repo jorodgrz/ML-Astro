@@ -1,4 +1,4 @@
-# Gas Morphology Classifier for Binary Evolution (Phase 1)
+# Gas Morphology Classifier for Binary Evolution
 
 This project aims to build a machine learning pipeline that classifies gas morphologies around binary star systems using synthetic images inspired by JWST observations. These morphologies, such as spirals, shells, and bipolar outflows, contain rich signatures of past and ongoing binary interactions (e.g., Roche lobe overflow, common envelope evolution, or jet activity).
 
