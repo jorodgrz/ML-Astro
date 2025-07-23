@@ -1,0 +1,33 @@
+# Phase 1 Experiment Config
+
+dataset:
+  data_dir: data/raw/
+  metadata_csv: data/metadata.csv
+  batch_size: 32
+  num_workers: 4
+  train_split: 0.8
+  val_split: 0.1
+  test_split: 0.1
+
+model:
+  name: SimpleMorphCNN
+  in_channels: 4
+  num_classes: 5
+  dropout: 0.3
+
+train:
+  epochs: 30
+  learning_rate: 0.001
+  weight_decay: 0.0005
+  optimizer: adam
+  scheduler: step
+  step_size: 10
+  gamma: 0.5
+  device: cuda
+
+augment:
+  use_augment: true
+  rotation: true
+  flip: true
+  gaussian_noise: true
+  dropout: true 
